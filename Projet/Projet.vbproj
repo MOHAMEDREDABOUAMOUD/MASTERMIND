@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80B9E93B-B1E5-4153-A119-6B6E970187CA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Projet.Module1</StartupObject>
+    <RootNamespace>Projet</RootNamespace>
+    <AssemblyName>Projet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Projet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Projet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HowToPlay.Designer.vb">
+      <DependentUpon>HowToPlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HowToPlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level_2.Designer.vb">
+      <DependentUpon>level_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="level_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level_3.Designer.vb">
+      <DependentUpon>level_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="level_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lose.Designer.vb">
+      <DependentUpon>Lose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Multi_Player.Designer.vb">
+      <DependentUpon>Multi_Player.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Multi_Player.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="multi_win.Designer.vb">
+      <DependentUpon>multi_win.vb</DependentUpon>
+    </Compile>
+    <Compile Include="multi_win.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PIN.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="win.Designer.vb">
+      <DependentUpon>win.vb</DependentUpon>
+    </Compile>
+    <Compile Include="win.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win2.Designer.vb">
+      <DependentUpon>win2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="win2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win3.Designer.vb">
+      <DependentUpon>win3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="win3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HowToPlay.resx">
+      <DependentUpon>HowToPlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level_2.resx">
+      <DependentUpon>level_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level_3.resx">
+      <DependentUpon>level_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lose.resx">
+      <DependentUpon>Lose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multi_Player.resx">
+      <DependentUpon>Multi_Player.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multi_win.resx">
+      <DependentUpon>multi_win.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win.resx">
+      <DependentUpon>win.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win2.resx">
+      <DependentUpon>win2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win3.resx">
+      <DependentUpon>win3.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-18 at 00.56.42.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code3331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture-naturelle-en-bois-clair-planches-étroites-horizontales-rapprochées-espace-de-copie-papier-peint-fond-pour-un-concepteur-162880259.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture-naturelle-en-bois-clair-planches-étroites-horizontales-rapprochées-espace-de-copie-papier-peint-fond-pour-un-concepteur-1628802591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture-naturelle-en-bois-clair-planches-étroites-horizontales-rapprochées-espace-de-copie-papier-peint-fond-pour-un-concepteur-1628802592.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-28 at 01.30.07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec51 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pec515.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peclose.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
